@@ -1532,7 +1532,7 @@ namespace CSObjectWrapEditor
             }
         }
 
-        [MenuItem("XLua/Generate Code", false, 1)]
+		[MenuItem("XPlugin/XLua/Generate Code", false, 1)]
         public static void GenAll()
         {
             var start = DateTime.Now;
@@ -1552,7 +1552,7 @@ namespace CSObjectWrapEditor
             AssetDatabase.Refresh();
         }
 
-        [MenuItem("XLua/Clear Generated Code", false, 2)]
+		[MenuItem("XPlugin/XLua/Clear Generated Code", false, 2)]
         public static void ClearAll()
         {
             clear(GeneratorConfig.common_path);

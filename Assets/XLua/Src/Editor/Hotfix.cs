@@ -436,7 +436,7 @@ namespace XLua
 
 #if !XLUA_GENERAL
         [PostProcessScene]
-        [UnityEditor.MenuItem("XLua/Hotfix Inject In Editor", false, 3)]
+		[UnityEditor.MenuItem("XPlugin/XLua/Hotfix Inject In Editor", false, 3)]
         public static void HotfixInject()
         {
             if (EditorApplication.isCompiling || Application.isPlaying)
@@ -1048,7 +1048,7 @@ namespace XLua
     public static class Hotfix
     {
         [PostProcessScene]
-        [MenuItem("XLua/Hotfix Inject In Editor", false, 3)]
+		[MenuItem("XPlugin/XLua/Hotfix Inject In Editor", false, 3)]
         public static void HotfixInject()
         {
             if (EditorApplication.isCompiling || Application.isPlaying)

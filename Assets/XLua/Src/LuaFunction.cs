@@ -142,7 +142,7 @@ namespace XLua
         }
 
         //deprecated
-        public object[] Call(object[] args, Type[] returnTypes)
+        public object[] _Call(object[] args, Type[] returnTypes)
         {
 #if THREAD_SAFE || HOTFIX_ENABLE
             lock (luaEnv.luaEnvLock)
@@ -178,9 +178,9 @@ namespace XLua
         }
 
         //deprecated
-        public object[] Call(params object[] args)
+        public object[] _Call(params object[] args)
         {
-            return Call(args, null);
+            return _Call(args, null);
         }
 
         public T Cast<T>()
