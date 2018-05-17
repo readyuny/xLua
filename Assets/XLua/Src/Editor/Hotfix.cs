@@ -1387,6 +1387,7 @@ namespace XLua
     public static class Hotfix
     {
         [PostProcessScene]
+		[DidReloadScripts]
 		[MenuItem("XPlugin/XLua/Hotfix Inject In Editor", false, 3)]
         public static void HotfixInject()
         {
